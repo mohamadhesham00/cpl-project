@@ -56,27 +56,30 @@ int main(){
 			num_of_elemnts ++ ;
 		}
 		
-	printf("for encryption press 1:  \n for decryption press 2: ");
-	scanf("%d",&h);
-	if (h==1){
-		encryption();
-		}
-			
-			
-	else if (h==2){
-		decryption();
-		
-	}	
-	else{
-	//if the user inputs a number but 1 or 2 a message shows 
+	printf("for encryption press 1  \n for decryption press 2 \n ");
+	//scanf("%d",&h);
+	
 	while(h!=1||h!=2){
 		printf("enter 1 or 2: ");
 		scanf("%d",&h);
-	}
-
-	}
-
+		if (h==1){
+			encryption();
+			break;
 		}
-			
-    return 0 ;
+					
+		else if (h==2){
+			decryption();
+			break ;
+		}
+		else 
+			continue;
+		
 	}
+	
+	}	
+	
+	//if the user inputs a number but 1 or 2 a message shows 
+
+		
+return 0;
+}
