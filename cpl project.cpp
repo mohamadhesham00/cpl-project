@@ -22,29 +22,7 @@ void decryption(){
 }printf("\n the decryption is %s" ,sentence);
 }
 int main(){
-		printf("enter a sentence:  ");
-		gets(sentence);
-		while ( sentence[num_of_elemnts] != '\0'){
-			num_of_elemnts ++ ;
-		}
-	printf("for encryption press 1:  \n for decryption press 2: ");
-	scanf("%d",&h);
-	if (h==1){
-		encryption();
-		}
-			
-			
-	else if (h==2){
-		decryption();
-		
-	}	
-	else{ 
-	while(h!=1||h!=2){
-		printf("enter 1 or 2: ");
-		scanf("%d",&h);
-	}
-
-	}
+	
 	
     return 0 ;
 	}
